@@ -1,0 +1,41 @@
+.whole {
+    background-color: gray;
+    color: white;
+    font-family: Arial, 'Arial Black', Verdana, 'Trebuchet MS', Georgia, Tahoma, 'Courier New', 'Times New Roman';
+}
+
+.header {
+    color: skyblue;
+    font-size: 45pt;
+    font-weight: bold;
+    /* font-family: sans-serif;*/
+    margin-bottom: 20px;
+}
+
+.firstSub {
+    color: yellow;
+
+    /*  font-family: 'Courier New', Courier, monospace;*/
+}
+
+.span1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.urlClick{
+    width:15%;
+}
+.happy{
+    width:15%;
+}
+.sad{
+    width:12%;
+}
