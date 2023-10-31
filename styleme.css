@@ -2,6 +2,7 @@
     background-color: gray;
     color: white;
     font-family: Arial, 'Arial Black', Verdana, 'Trebuchet MS', Georgia, Tahoma, 'Courier New', 'Times New Roman';
+    text-align: left;
 }
 
 .header {
@@ -24,7 +25,7 @@
 }
 
 .title {
-    color: blue;
+    color: skyblue;
     font-weight: bold;
     font-size: 20px;
     padding-top: 10px;
@@ -38,4 +39,45 @@
 }
 .sad{
     width:12%;
+}
+.span3{
+    font-style: italic;
+}
+.movie{
+    color: yellow;
+    font-weight: bold;
+}
+.directorname{
+    padding-left: 43px;
+}
+.havor{
+    /* unvisited link */
+a:link color : #
+/* visited link */
+a:visited color : #
+/* mouse over link */
+a:hover color : #
+/* click on a link */
+a:active color : #
+ 
+}
+a
+{
+    text-decoration: none;
+    color: red;
+}
+.flip:hover{
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+}
+.CapFirst::first-letter{
+    font-size: xx-large;
+    font-weight: bolder;
+    
+}
+ol {
+    display: flex;
+    flex-direction: column-reverse;
 }
