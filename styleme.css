@@ -50,22 +50,25 @@
 .directorname{
     padding-left: 43px;
 }
-.havor{
-    /* unvisited link */
-a:link color : #
-/* visited link */
-a:visited color : #
-/* mouse over link */
-a:hover color : #
-/* click on a link */
-a:active color : #
- 
+
+a:link{
+    color:red;    
 }
-a
-{
+a:visited{
+    color:yellow;
+}
+a:hover{
+    color:blue
+}
+a:active{
+    color:aqua;
+}
+
+a{
     text-decoration: none;
     color: red;
 }
+
 .flip:hover{
     transform: scaleY(-1);
     -webkit-transform: scaleY(-1);
@@ -74,7 +77,7 @@ a
 }
 .CapFirst::first-letter{
     font-size: xx-large;
-    font-weight: bolder;
+    font-weight: bold;
     
 }
 ol {
