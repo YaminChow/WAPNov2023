@@ -1,7 +1,7 @@
 .whole {
     background-color: gray;
     color: white;
-    font-family: Arial, 'Arial Black', Verdana, 'Trebuchet MS', Georgia, Tahoma, 'Courier New', 'Times New Roman';
+    font-family: cursive,Arial, 'Arial Black', Verdana, 'Trebuchet MS', Georgia, Tahoma, 'Courier New', 'Times New Roman';
     text-align: left;
 }
 
@@ -58,7 +58,7 @@ a:visited{
     color:yellow;
 }
 a:hover{
-    color:blue
+    color:blue;
 }
 a:active{
     color:aqua;
