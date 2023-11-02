@@ -56,7 +56,9 @@
     
  }
 .item{
-	border: 1px solid black;
+	
+    border-top: 1px solid;
+    border-left: 1px solid;
 	width: 150px;
 	height: 30px;
     text-align: center;
@@ -65,14 +67,38 @@
 }
 .itemTotal{
     border: 1px solid black;
-	width: 293px;
+    border-bottom: 1px solid;
+   
+	width: 291.5px;
 	height: 30px;
     
     padding-left: 310px;
     padding-top: 5px;
 }
-.itemQuantity{
-    border: 1px solid black;
+.itemRight{
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+	width: 150px;
+	height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.itemBottom{
+    border-bottom: 1px solid;
+    border-left: 1px solid;    
+    border-top: 1px solid;
+	width: 150px;
+	height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.itemQuantity{    
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
 	width: 105px;
 	height: 35px;
 
