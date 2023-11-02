@@ -47,6 +47,14 @@
    text-align: center;
    
 }
+#container2{
+   
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 45px;
+    text-align: center;
+    
+ }
 .item{
 	border: 1px solid black;
 	width: 150px;
