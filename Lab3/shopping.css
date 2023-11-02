@@ -1,15 +1,14 @@
 
 .page{
     width: 700px;
-    height: 500px;
+    height: 520px;
     border: 2px solid pink;
 }
 .divTitle{
     width: 1000px;
     margin: auto;
     display: flex;
-    /*align-items: center;
-    gap:210px; */
+  
 }
 .logo{
     width: 10%;
@@ -45,7 +44,7 @@
    display: flex;
    flex-wrap:wrap;
    padding-left: 45px;
-    text-align: center;
+   text-align: center;
    
 }
 .item{
@@ -56,11 +55,33 @@
     padding-top: 5px;
   
 }
-.itemmerge{
+.itemTotal{
     border: 1px solid black;
-	width: 294px;
+	width: 293px;
 	height: 30px;
     
     padding-left: 310px;
     padding-top: 5px;
 }
+.itemQuantity{
+    border: 1px solid black;
+	width: 105px;
+	height: 35px;
+
+    display: flex;
+   flex-direction: row;
+   padding-left: 45px;
+   align-items: center;
+   
+}
+.textBox{
+    width: 35px;
+    height: 13px;
+}
+
+.divPlaceOrder{
+    margin-top: 15px;
+    padding-left: 550px;
+}
+
+
