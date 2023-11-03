@@ -76,7 +76,7 @@
     border: 1px solid black;
     border-bottom: 1px solid;
 
-    width: 292px;
+    width: 291.5px;
     height: 30px;
 
     padding-left: 310px;
@@ -107,13 +107,15 @@
     border-top: 1px solid;
     border-left: 1px solid;
     border-right: 1px solid;
-    width: 105px;
+    width: 150px;
     height: 35px;
 
     display: flex;
     flex-direction: row;
-    padding-left: 45px;
+    justify-content: center;
     align-items: center;
+
+
 
 }
 

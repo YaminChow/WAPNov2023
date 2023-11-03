@@ -1,0 +1,89 @@
+body {
+    width: 900px;
+    height: 600px; 
+    border: 2px solid cadetblue;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 12px;
+    align-content: center;
+    box-sizing: border-box;
+    margin-left: 10px;
+    
+}
+
+#title {
+    font-weight: bold;
+    background-color: cadetblue;
+    align-content: center;
+    
+}
+
+#container1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    text-align: left;
+
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-color: silver;
+    color:cadetblue;
+    margin-top: 50px;    
+    justify-content: center;
+
+}
+
+.item1 {
+    width: 20%;
+    text-align: center;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+.item2 {
+
+    width: 5%;
+    text-align: center;
+    margin-top: 10px;
+    text-align: left;
+}
+.itemCheckbox{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+}
+
+.moreA {
+    margin-left: 20px;
+}
+
+.seat {
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.star {
+    color: red;
+}
+.textBold{
+    font-weight: bold;    
+}
+
+.meal{
+    width: 165px;
+}
+.btnSubmit{
+    background-color: cadetblue;
+    width: 100px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;    
+}
