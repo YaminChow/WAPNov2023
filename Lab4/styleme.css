@@ -55,9 +55,7 @@ body {
 }
 .itemCheckbox{
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    
+    flex-direction: column;    
 }
 
 .moreA {
