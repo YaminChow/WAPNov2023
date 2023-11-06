@@ -1,0 +1,21 @@
+body{
+    background-color: yellow;
+    color: magenta;
+}
+
+p{
+    color: orange;
+}
+
+.central, .item{
+    color: green;
+    background-color: blue;
+}
+
+#item{
+    background-color: cyan;
+}
+
+div>p{
+    color: pink;
+}
