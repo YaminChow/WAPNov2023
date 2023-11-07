@@ -9,7 +9,10 @@
 
     const stuObj = students.filter(stu => stu.courses.includes('cs303'))
             .reduce((obj,stu)=>{
-               obj[stu.name]= stu.grades.reduce((avg,g,index,array)=> avg+g/array.length,0);
+               obj[stu.name]= stu.grades.reduce((avg,g,index,array)=> 
+               {console.log("length",array.length);
+                avg+g/array.length;
+                        },0);
             return obj;
             },{});
     
