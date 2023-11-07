@@ -1,13 +1,15 @@
-function printNumber(from, to){
+function printNumber(from, to) {
     let cur = from;
 
-    const timer = setInterval(function (){
-        console.log(cur);
-        if(cur === to){
-            clearInterval(timer);
+    const timer = setInterval(() => {
+        if (cur <= to) {
+            document.getElementById("Number").innerHTML = cur++;
         }
-        cur++;
-    },1000);
+        else
+            clearTimeout(timer);
+
+        
+    }, 1000);
 }
 
-printNumber(1,10);
+//printNumber(1,10);
