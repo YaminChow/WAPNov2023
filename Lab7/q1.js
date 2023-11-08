@@ -42,12 +42,12 @@ group2.showList();
 console.log("Solution 3");
 let group3 = {
     title: "Our Group",
-
     students: ["John", "Pete", "Alice"],
-    showList: function () {
-        this.students.forEach(function(student) {
-            console.log(this.title + ": " + student);
-        },this);
+    showList: function () {        
+        this.students.forEach( (student)=> {
+            console.log(this.title + ": " + student
+            );
+        });
     }
 };
 group3.showList.call(group3);
@@ -56,12 +56,12 @@ group3.showList.call(group3);
 console.log("Solution 4");
 let group4 = {
     title: "Our Group",
-
     students: ["John", "Pete", "Alice"],
-    showList:function () {        
-        this.students.forEach( function(student) {
-            console.log(this.title + ": " + student );
-        },this);
+    showList: function () {        
+        this.students.forEach( (student)=> {
+            console.log(this.title + ": " + student
+            );
+        });
     }
 };
 group4.showList.apply(group4);
@@ -70,13 +70,12 @@ group4.showList.apply(group4);
 console.log("Solution 5");
 let group5 = {
     title: "Our Group",
-
     students: ["John", "Pete", "Alice"],
-    showList:function () {        
-        this.students.forEach( function(student) {
+    showList: function () {        
+        this.students.forEach( (student)=> {
             console.log(this.title + ": " + student
             );
-        },this);
+        });
     }
 };
 group5.showList.bind(group5)();
