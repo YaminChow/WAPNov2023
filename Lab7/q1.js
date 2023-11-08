@@ -44,7 +44,8 @@ let group3 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
     showList: function () {
-        this.students.forEach((std) => {
+        this.students.forEach((std)=> {
+            console.log(this.title,std);
             return function (student) {
                 console.log(this.title + ": " + student);
             }.call(this,std);
@@ -76,11 +77,9 @@ let group5 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
     showList: function () {
-        this.students.forEach((std) => {
-            return function (student) {
-                console.log(this.title + ": " + student);
-            }.bind(this,std)();
-    });
+        this.students.forEach(function(std)  {            
+                console.log(this.title + ": " + std);
+            }.bind(this));    
     }
 };
 group5.showList();
