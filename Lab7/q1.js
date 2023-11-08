@@ -43,40 +43,45 @@ console.log("Solution 3");
 let group3 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
-    showList: function () {        
-        this.students.forEach( (student)=> {
-            console.log(this.title + ": " + student
-            );
-        });
+    showList: function () {
+        this.students.forEach((std) => {
+            return function (student) {
+                console.log(this.title + ": " + student);
+            }.call(this,std);
+    });
     }
 };
-group3.showList.call(group3);
+group3.showList();
+
 
 //solution 4 using apply
 console.log("Solution 4");
 let group4 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
-    showList: function () {        
-        this.students.forEach( (student)=> {
-            console.log(this.title + ": " + student
-            );
-        });
+    showList: function () {
+        this.students.forEach((std) => {
+            return function (student) {
+                console.log(this.title + ": " + student);
+            }.apply(this,[std]);
+    });
     }
 };
-group4.showList.apply(group4);
+group4.showList();
+
 
 //solution 5 using binds
 console.log("Solution 5");
 let group5 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
-    showList: function () {        
-        this.students.forEach( (student)=> {
-            console.log(this.title + ": " + student
-            );
-        });
+    showList: function () {
+        this.students.forEach((std) => {
+            return function (student) {
+                console.log(this.title + ": " + student);
+            }.bind(this,std)();
+    });
     }
 };
-group5.showList.bind(group5)();
+group5.showList();
 
