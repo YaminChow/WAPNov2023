@@ -3,8 +3,7 @@ let group = {
     students: ["John", "Pete", "Alice"],
     showList: function () {
         this.students.forEach(function (student) {
-            console.log(this.title + ": " + student
-            );
+            console.log(this.title + ": " + student);
         });
     }
 };
@@ -18,8 +17,7 @@ let group1 = {
     showList: function () {
         const self= this;
         this.students.forEach(function (student) {
-            console.log(self.title + ": " + student
-            );
+            console.log(self.title + ": " + student);
         });
     }
 };
@@ -46,11 +44,10 @@ let group3 = {
     title: "Our Group",
 
     students: ["John", "Pete", "Alice"],
-    showList:function () {        
-        this.students.forEach( (student)=> {
-            console.log(this.title + ": " + student
-            );
-        });
+    showList: function () {
+        this.students.forEach(function(student) {
+            console.log(this.title + ": " + student);
+        },this);
     }
 };
 group3.showList.call(group3);
@@ -62,10 +59,9 @@ let group4 = {
 
     students: ["John", "Pete", "Alice"],
     showList:function () {        
-        this.students.forEach( (student)=> {
-            console.log(this.title + ": " + student
-            );
-        });
+        this.students.forEach( function(student) {
+            console.log(this.title + ": " + student );
+        },this);
     }
 };
 group4.showList.apply(group4);
@@ -77,11 +73,11 @@ let group5 = {
 
     students: ["John", "Pete", "Alice"],
     showList:function () {        
-        this.students.forEach( (student)=> {
+        this.students.forEach( function(student) {
             console.log(this.title + ": " + student
             );
-        });
+        },this);
     }
 };
-const g5 = group5.showList.bind(group5);
-g5();
+group5.showList.bind(group5)();
+
