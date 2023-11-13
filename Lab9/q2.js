@@ -29,27 +29,29 @@ class Quiz{
             this.questions.set(element.questionId,element);
             
         });
-        this.students = stud;
+        this.studentarr = stud;            
     }
     
     scoreStudentBySid(studId){
         var retCount = 0;
-        let std = this.students.filter(ele => ele.studentId === studId).reduce((acc, std) => std, {});
-        console.log(this.students[0].studentId);        
-        for(let i = 0; i < this.students;i++){
-            
-            if(studId === this.students[i].studentId){
-                console.log('true',this.students[i].studentId); 
-                for(let j =0; j <this.questions;j++){
-                    if(this.students[i].questionId=== this.questions[j].questionId){
-                        if(this.students[i].answer ===this.questions[j].answer){
-                            retCount
-                        }
+        
+        var studInfo = this.studentarr.filter(ele=> ele.studentId== studId);
+        //console.log('Info: ', studInfo[0].answer);
 
+        for(let s of studInfo[0].answer){
+           // console.log('First ',s.questionId);
+
+            for(let q of this.questions){
+                //console.log ('in question loop',s.questionId, 'A Ques ', q[0]);
+                if(s.questionId == q[0]){
+                    //console.log('Ques: ', s.answer, ' ', q[1].answer);
+                    if(s.answer == q[1].answer){
+                        retCount++;
                     }
-                }
-            }
-        }
+                }        
+                 
+             }
+        }     
         return retCount;
     }
 }
@@ -62,6 +64,7 @@ student2.addAnswer(new Question(3, 'b'));
 student2.addAnswer(new Question(2, 'a'));
 student2.addAnswer(new Question(1, 'd'));
 const students = [student1, student2];
+
 const questions =[new Question(1, 'b'), new Question(2, 'a'), new Question(3, 'b')];
 const quiz = new Quiz(questions, students);
 
