@@ -54,6 +54,13 @@ class Quiz{
         }     
         return retCount;
     }
+
+    getAverageScore(){
+        let avgScore = this.studentarr.map(ele => this.scoreStudentBySid(ele.studentId))
+        .reduce((accu, elem)=> accu+ elem/this.studentarr.length,0);
+        //console.log('Avg: ', avgScore);
+        return avgScore;
+    }
 }
 const student1 = new Student(10);
 student1.addAnswer(new Question(2, 'a'));
@@ -72,3 +79,6 @@ let scoreforStudent10 = quiz.scoreStudentBySid(10);
 console.log(scoreforStudent10); //Expected Result: 3
 let scoreforStudent11 = quiz.scoreStudentBySid(11);
 console.log(scoreforStudent11); //Expected Result: 2
+
+let average = quiz.getAverageScore();
+console.log(average); //Expected Reuslt: 2.5
