@@ -16,7 +16,7 @@ let group1 = {
     students: ["John", "Pete", "Alice"],
     showList: function () {
         const self= this;
-        this.students.forEach(function (student) {
+        self.students.forEach(function (student) {
             console.log(self.title + ": " + student);
         });
     }
@@ -47,7 +47,7 @@ let group3 = {
         this.students.forEach((std) => {
             ( function (student) {
                 console.log(this.title + ": " + student);
-            }).call(this,[std]);
+            }).call(this,std);
     });
     }
 };
@@ -68,6 +68,8 @@ let group4 = {
     }
 };
 group4.showList();
+
+
 
 
 //solution 5 using binds

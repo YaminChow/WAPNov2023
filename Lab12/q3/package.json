@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "q3",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "set PORT=3000 && set NODE_ENV=development && nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

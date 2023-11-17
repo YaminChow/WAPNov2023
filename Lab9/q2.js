@@ -37,14 +37,12 @@ class Quiz{
         
         var studInfo = this.studentarr.filter(ele=> ele.studentId== studId);
         //console.log('Info: ', studInfo[0].answer);
-
         for(let s of studInfo[0].answer){
            // console.log('First ',s.questionId);
-
             for(let q of this.questions){
-                //console.log ('in question loop',s.questionId, 'A Ques ', q[0]);
-                if(s.questionId == q[0]){
-                    //console.log('Ques: ', s.answer, ' ', q[1].answer);
+               // console.log ('in question loop',s.questionId, 'A Ques ', q[0]);
+                if(s.questionId == q[1].questionId){
+                   // console.log('Ques: ', s.answer, 'Hello ', q);
                     if(s.answer == q[1].answer){
                         retCount++;
                     }

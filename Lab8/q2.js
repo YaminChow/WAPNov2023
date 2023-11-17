@@ -35,3 +35,12 @@ stu3.inputNewGrade(88);
 stu3.inputNewGrade(90);
 avg = stu3.computeAverage();
 console.log(stu3.firstname, stu3.lastname, avg);
+
+
+
+function Rabbit(){
+    Rabbit.prototype ={constructor: Rabbit};
+}
+let rabbit = new Rabbit.constructor('White');
+let rabbit2 = new rabbit.constructor('Black');
+console.log('Rabbit',rabbit.constructor===Rabbit.constructor);

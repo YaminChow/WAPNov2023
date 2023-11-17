@@ -1,15 +1,14 @@
 
     let i = 0;
-    setTimeout(() => console.log('In the beginning of the loop : ',i), 100); // ?
-    console.log('Before: ',i);
+    setTimeout(() => console.log(i), 100); // ?
+  
     // assume that the time to execute this function is >100ms
     for(let j = 0; j < 100000000; j++) {
       i++;
       
     }
-    console.log('After: ',i);
+ 
 
-// Before 0
-// After:  100000000
-// In the beginning of the loop  100000000
+//100000000 , setTimeout is asyc call thus why it is working after all of the synchronous called done 
+//so that the result 'i' is 100000000
     
