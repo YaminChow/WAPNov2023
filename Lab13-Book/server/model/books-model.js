@@ -39,7 +39,14 @@ module.exports = class Book {
 
 
     static deleteBookById(id) {
+        const bookdel =books.filter(b=> b.id == id);
+        this.id = id;
         books = books.filter(b => b.id != id);
+        
+        if(bookdel.length ==0){
+            throw new Error(`This id ${this.id} doesn't find out in DB.`);
+        }
+
         //const index = books.findIndex(b => b.id == id);
         // if (index > -1) {
         //     books.splice(index, 1);
