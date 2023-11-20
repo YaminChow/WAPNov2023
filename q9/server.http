@@ -4,7 +4,7 @@ GET http://localhost:3000/books/
 GET http://localhost:3000/books/1
 
 ####
-GET http://localhost:3000/books?firstname={E}
+GET http://localhost:3000/books/firstname/E
 
 ###
 POST http://localhost:3000/books/
@@ -14,7 +14,7 @@ Content-Type: application/json
     "title": "React",
     "author": {
     "authorId": 311,
-    "firstname": "Lucy",
+    "firstname": "Hello",
     "lastname": "Jack"
 }
 }

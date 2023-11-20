@@ -32,7 +32,7 @@ module.exports =class Book{
     }
 
     static getBookListByFirstName(fname){
-         return book.filter(b => b.author.firstname.toUpperCase().startsWith(fname.toUpperCase()) );
+         return book.filter(b => b.author.firstname.toUpperCase().includes(fname.toUpperCase()) );
     }
 
     static getBookById(id){
