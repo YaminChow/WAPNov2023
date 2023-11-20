@@ -5,7 +5,8 @@ let router = express.Router();
 
 router.get('/:bookId', bookController.getBookById);
 router.post('/',bookController.saveBook);
-router.get('/firstname/:firstname',bookController.getBookByFirstName);
+//router.get('/firstname/:firstname',bookController.getBookByFirstName);
+router.get('/',bookController.getBookByFirstName);
 
 
 router.get('/',bookController.getAllBook);

@@ -8,7 +8,8 @@ exports.getAllBook = (req,res)=> {
 
 exports.getBookByFirstName= (req,res)=>{
     console.log(req.params.firstname);
-    res.json(bookModel.getBookListByFirstName(req.params.firstname));
+   // res.json(bookModel.getBookListByFirstName(req.params.firstname));
+   res.json(bookModel.getBookListByFirstName(req.query.firstname));
 }
 
 exports.getBookById =(req,res) =>{

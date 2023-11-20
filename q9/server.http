@@ -3,8 +3,11 @@ GET http://localhost:3000/books/
 ####
 GET http://localhost:3000/books/1
 
-####
-GET http://localhost:3000/books/firstname/E
+# ####
+# GET http://localhost:3000/books/firstname/Edward
+
+###
+Get http://localhost:3000/books/?firstname=Edward
 
 ###
 POST http://localhost:3000/books/
