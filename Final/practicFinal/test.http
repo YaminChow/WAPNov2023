@@ -1,0 +1,13 @@
+post http://localhost:3000/students/610001/courses
+Content-Type: application/json
+
+{ "courseId": "CS311", 
+"coursename": "WAA", 
+"semester": "2024-Winter", 
+"grade": 95 }
+
+#####
+get http://localhost:3000/students/610001
+
+###
+get http://localhost:3000/students/610001/getAverage
